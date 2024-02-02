@@ -1,0 +1,50 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>stylee.top 网页版视频聊天</title>
+   
+    <link id="favicon" rel="icon" href="https://stylee.top/edit/favicon-app.ico" type="image/x-icon">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import libraries -->
+    <script src="/lib/peerjs.min.js"></script>
+    <!--script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script-->
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/main.js" type="module"></script>
+    <style>
+     
+        
+    </style>
+
+  </head>
+  <body>
+    stylee.top 网页版视频聊天 <br>
+
+    <video   class="remote-video wrap" autoplay></video>
+    <input type="text"   id="connect-to-peer" />
+    <button onclick="connectToPeer()">
+      连接
+    </button>
+
+    <div class="messages">
+      
+    </div>
+
+    <input type="text"  id="message_input" />
+    <button onclick="sendmsg()">
+      发送消息
+    </button>
+
+    <footer>Made with <a href="https://stylee.top">stylee.top</a>!</footer>
+ 
+  </body>
+</html>
